@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume</title>
+    <style type="text/css">
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container and Layout Styles */
+        .container {
+            width: 1050px;
+            margin: 0 auto;
+            padding: 25px;
+            display: flex;
+            background-color: #F4F6F7;
+        }
+
+        .left-panel {
+            width: 30%;
+            background-color: #2874a6;
+            padding: 10px;
+            color: white;
+        }
+
+        div img {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .right-panel {
+            width: 70%;
+            padding: 10px;
+            background-color: #F4F6F7;
+        }
+
+        /* Typography Styles */
+        .heading-main {
+            color: #024372;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .sub-heading {
+            color: #02487a;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            color: white;
+            font-size: 18px;
+            padding: 6px;
+            margin-bottom: 6px;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        /* List and Link Styles */
+        ul.custom-list {
+            list-style: none;
+            padding-left: 20px;
+            /* Adjusts left padding */
+        }
+
+        ul.custom-list li::before {
+            content: "";
+            display: inline-block;
+            background-image: url('arrow-right.png');
+            /* Path to your image */
+            background-size: 12px 12px;
+            /* Set the size of the image */
+            background-repeat: no-repeat;
+            width: 20px;
+            /* Width of the bullet */
+            height:20px;
+            /* Height of the bullet */
+            margin-right: 2px;
+            /* Space between the bullet and text */
+            vertical-align: middle;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Table Styles */
+        .info-table,
+        .qualification-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .info-table td {
+            padding: 5px;
+        }
+
+        .qualification-table th,
+        .qualification-table td {
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        /* Divider Styles */
+        hr {
+            border: none;
+            height: 1px;
+            margin: 10px 0;
+        }
+
+        hr.blue-divider {
+
+            background: linear-gradient(to right, black, rgba(0, 0, 0, 0.56), transparent);
+        }
+
+        hr.black-divider {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.267), rgb(0, 0, 0), rgba(0, 0, 0, 0.503));
+        }
+
+        hr.red-divider {
+            background: linear-gradient(to right, rgba(255, 0, 0, 0.267), rgb(255, 0, 0), rgba(255, 0, 0, 0.503));
+        }
+
+        .left-hr {
+
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.267), rgb(255, 255, 255), rgba(255, 255, 255, 0.503));
+        }
+
+        /* Space Area */
+        .space-area {
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <div align="center">
+                <img src="sachin profile.jpg" width="180px" height="220px" alt="Profile Picture" />
+            </div>
+            <br />
+            <h2 class="section-title" align="center">CONTACT</h2>
+            <hr class="left-hr">
+
+            <h3 class="section-title">Address:</h3>
+            <table class="info-table">
+                <tr>
+                    <td>VILL:</td>
+                    <td>BHALSUNDHA</td>
+                </tr>
+                <tr>
+                    <td>PO:</td>
+                    <td>CHAS</td>
+                </tr>
+                <tr>
+                    <td>PS:</td>
+                    <td>CHAS</td>
+                </tr>
+                <tr>
+                    <td>PIN-CODE:</td>
+                    <td>827013</td>
+                </tr>
+                <tr>
+                    <td>DIST:</td>
+                    <td>BOKARO (JHARKHAND)</td>
+                </tr>
+            </table>
+
+            <h3 class="section-title">Phone:</h3>
+            <p><a href="tel:7091048449">7091048449</a></p>
+
+            <h3 class="section-title">Email:</h3>
+            <p><a href="mailto:sachink09053@gmail.com">sachink09053@gmail.com</a></p>
+            <hr class="left-hr">
+
+            <h3 class="section-title">Hobbies:</h3>
+            <ul class="custom-list">
+                <li>Talking with family, especially my mother</li>
+                <li>Spending time with nature</li>
+                <li>Reading books</li>
+            </ul>
+            <hr class="left-hr">
+
+            <h3 class="section-title">Soft Skills:</h3>
+            <ul class="custom-list">
+                <li>Leadership Skills</li>
+                <li>Good Communication Skills</li>
+            </ul>
+            <hr class="left-hr">
+
+            <h3 class="section-title">Strengths:</h3>
+            <ul class="custom-list">
+                <li>Time Management</li>
+                <li>Self-motivated</li>
+                <li>Confident</li>
+            </ul>
+            <hr class="left-hr">
+
+            <h3 class="section-title">Declaration:</h3>
+            <p>I hereby declare that the above information is true to the best of my knowledge.</p>
+            <hr class="left-hr">
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <p class="heading-main">SACHIN KUMAR MAHATO</p>
+            <p class="sub-heading">COMPUTER SCIENCE AND ENGINEERING</p>
+            <hr class="blue-divider">
+
+            <h3 class="sub-heading">Profile</h3>
+            <p>To obtain a challenging position that provides me opportunity to reach my full potential and where I
+                can use my abilities, learn new skills, and grow with the success and development of the
+                company/organisation.</p>
+            <hr class="black-divider">
+
+            <h3 class="sub-heading">Educational Qualification</h3>
+            <table class="qualification-table">
+                <tr>
+                    <th>S.No</th>
+                    <th>Class</th>
+                    <th>Board/University</th>
+                    <th>School/College</th>
+                    <th>Passing Year</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>10<sup>th</sup></td>
+                    <td>JAC</td>
+                    <td>RAM RUDRA +2 HIGH SCHOOL</td>
+                    <td>2019</td>
+                    <td>81.2%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>12<sup>th</sup></td>
+                    <td>JAC</td>
+                    <td>RAM RUDRA +2 HIGH SCHOOL</td>
+                    <td>2021</td>
+                    <td>68.8%</td>
+                </tr>
+            </table>
+
+            <h3 class="sub-heading">Technical Qualification</h3>
+            <p>Pursuing Diploma in <b>MECHANICAL ENGINEERING</b> from <b>GOVERNMENT POLYTECHNIC ADITYAPUR</b>
+                (JAMSHEDPUR) <b>(2022-2025)</b></p>
+            <table class="qualification-table">
+                <tr>
+                    <th>Semester</th>
+                    <th>Board/University</th>
+                    <th>Institute</th>
+                    <th>Year of Passing</th>
+                    <th>Percentage of Marks</th>
+                    <th>Average of Marks</th>
+                </tr>
+                <tr>
+                    <td>1<sup>st</sup> Semester</td>
+                    <td rowspan="7"><b>JUT</b></td>
+                    <td rowspan="7"><b>GOVERNMENT POLYTECHNIC ADITYAPUR</b></td>
+                    <td>2023</td>
+                    <td>77.35%</td>
+                    <td rowspan="7">80%</td>
+                </tr>
+                <tr>
+                    <td>2<sup>nd</sup> Semester</td>
+                    <td>2023</td>
+                    <td>84.13%</td>
+                </tr>
+                <tr>
+                    <td>3<sup>rd</sup> Semester</td>
+                    <td>2024</td>
+                    <td>79.13%</td>
+                </tr>
+                <!-- Further semesters data can be added here -->
+            </table>
+
+            <h3 class="sub-heading">Technical Training</h3>
+            <ul class="custom-list">
+                <li><b>Organization:</b> KUNAL I TECHNOLOGY ADITYAPUR</li>
+                <li><b>Training Period:</b> 16/08/2024 to 15/09/2024</li>
+                <li><b>Course:</b> In-plant Training</li>
+            </ul>
+
+            <h3 class="sub-heading">Personal Profile</h3>
+            <table class="info-table">
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>: SACHIN KUMAR MAHATO</td>
+                </tr>
+                <tr>
+                    <td><b>Date of Birth</b></td>
+                    <td>: 01-01-2005</td>
+                </tr>
+                <tr>
+                    <td><b>Father's Name</b></td>
+                    <td>: JETHU LAL MAHATO</td>
+                </tr>
+                <tr>
+                    <td><b>Mother's Name</b></td>
+                    <td>: PRATIMA DEVI</td>
+                </tr>
+                <tr>
+                    <td><b>Father's Occupation</b></td>
+                    <td>: FARMER</td>
+                </tr>
+                <tr>
+                    <td><b>Gender</b></td>
+                    <td>: MALE</td>
+                </tr>
+                <tr>
+                    <td><b>Marital Status</b></td>
+                    <td>: UNMARRIED</td>
+                </tr>
+                <tr>
+                    <td><b>Religion</b></td>
+                    <td>: HINDU</td>
+                </tr>
+                <tr>
+                    <td><b>Language Known</b></td>
+                    <td>: ENGLISH, HINDI</td>
+                </tr>
+            </table>
+
+            <hr class="red-divider">
+        </div>
+    </div>
+
+</body>
+
+</html>
