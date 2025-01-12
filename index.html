@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Resume</title>
     <style type="text/css">
         /* General Styles */
@@ -55,7 +56,7 @@
             color: white;
             font-size: 18px;
             padding: 6px;
-            margin-bottom: 6px;
+            margin: 0px;
         }
 
         .text-white {
@@ -67,23 +68,6 @@
             list-style: none;
             padding-left: 20px;
             /* Adjusts left padding */
-        }
-
-        ul.custom-list li::before {
-            content: "";
-            display: inline-block;
-            background-image: url('arrow-right.png');
-            /* Path to your image */
-            background-size: 12px 12px;
-            /* Set the size of the image */
-            background-repeat: no-repeat;
-            width: 20px;
-            /* Width of the bullet */
-            height: 20px;
-            /* Height of the bullet */
-            margin-right: 2px;
-            /* Space between the bullet and text */
-            vertical-align: middle;
         }
 
 
@@ -143,9 +127,58 @@
         .technical {
             display: flex;
             justify-content: flex-start;
-            &ul{
-                margin-left: 100px;
+
+            &ul {
+                margin: 0;
+                padding: 0;
             }
+        }
+        .technical  {
+            display: flex;
+        }
+        .technical ul li {
+            position: relative;
+            display: inline-block;
+            background-color: rgba(239, 229, 246, 0.481);
+            padding:5px 10px;
+            border-radius: 10px;
+            margin:5px;
+        }
+
+        .technical ul li::after {
+            position: absolute;
+            content: ' ';
+            height: 2px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.24);
+            bottom: 0;
+            left: 0;
+            
+        }
+        i{
+            padding: 5px;
+            color: #02020292;
+            font-size: 20px;
+        }
+        strong{
+            font-size: 20px;
+            color: rgb(53, 15, 15);
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 50px 5px 20px;
+            & img{
+                display: block;
+                height: 40px;
+                width: auto;
+                border-radius: 0;
+                margin: 5px 0;
+            }
+        }
+        p{
+            margin: 5px;
+            text-indent: 10px;
         }
     </style>
 </head>
@@ -154,73 +187,6 @@
 
     <div class="container">
         <!-- Left Panel -->
-        <div class="left-panel">
-            <div align="center">
-                <img src="sachin profile.jpg" width="180px" height="220px" alt="Profile Picture" />
-            </div>
-            <br />
-            <h2 class="section-title" align="center">CONTACT</h2>
-            <hr class="left-hr">
-
-            <h3 class="section-title">Address:</h3>
-            <table class="info-table">
-                <tr>
-                    <td>VILL:</td>
-                    <td>BHALSUNDHA</td>
-                </tr>
-                <tr>
-                    <td>PO:</td>
-                    <td>CHAS</td>
-                </tr>
-                <tr>
-                    <td>PS:</td>
-                    <td>CHAS</td>
-                </tr>
-                <tr>
-                    <td>PIN-CODE:</td>
-                    <td>827013</td>
-                </tr>
-                <tr>
-                    <td>DIST:</td>
-                    <td>BOKARO (JHARKHAND)</td>
-                </tr>
-            </table>
-
-            <h3 class="section-title">Phone:</h3>
-            <p><a href="tel:7091048449">7091048449</a></p>
-
-            <h3 class="section-title">Email:</h3>
-            <p><a href="mailto:sachink09053@gmail.com">sachink09053@gmail.com</a></p>
-            <hr class="left-hr">
-
-            <h3 class="section-title">Hobbies:</h3>
-            <ul class="custom-list">
-                <li>Talking with family, especially my mother</li>
-                <li>Spending time with nature</li>
-                <li>Reading books</li>
-            </ul>
-            <hr class="left-hr">
-
-            <h3 class="section-title">Soft Skills:</h3>
-            <ul class="custom-list">
-                <li>Leadership Skills</li>
-                <li>Good Communication Skills</li>
-            </ul>
-            <hr class="left-hr">
-
-            <h3 class="section-title">Strengths:</h3>
-            <ul class="custom-list">
-                <li>Time Management</li>
-                <li>Self-motivated</li>
-                <li>Confident</li>
-            </ul>
-            <hr class="left-hr">
-
-            <h3 class="section-title">Declaration:</h3>
-            <p>I hereby declare that the above information is true to the best of my knowledge.</p>
-            <hr class="left-hr">
-        </div>
-
         <!-- Right Panel -->
         <div class="right-panel">
             <p class="heading-main">SACHIN KUMAR MAHATO</p>
@@ -301,33 +267,113 @@
 
             <h3 class="sub-heading">Technical Training</h3>
             <ul class="custom-list">
-                <li><b>Organization:</b> KUNAL I TECHNOLOGY ADITYAPUR</li>
-                <li><b>Training Period:</b> 16/08/2024 to 15/09/2024</li>
-                <li><b>Course:</b> In-plant Training</li>
-                <li><b>Project:-</b>Technical Institute (static website)</li>
+                <li><strong> KUNAL I TECHNOLOGY </strong></li>
+                <li><i class="ri-calendar-2-line"></i> 16/08/2024 to 15/09/2024 </li>
+                <li><i class="ri-map-pin-line"></i> Jamshedpur , Jharkhand</li>
+                <li>An organization focused on technical training.</li>
+                <li><i class="ri-arrow-right-s-fill"></i>Completed In-plant Training</li>
+                <li><i class="ri-arrow-right-s-fill"></i>Developed a static website project during the training</li>
 
             </ul>
-            
-            <h3>Technical skills:-</h3>
+
+            <h3 class="sub-heading">Technical skills:-</h3>
             <div class="technical">
 
                 <ul>
-                    <h4>Programming Language:-</h4>
+
                     <li>C</li>
                     <li>C++</li>
                     <li>JAVA</li>
-                </ul>
-                <ul>
-                    <h4>Front end Development</h4>
-                    <li>HTML</li>
-                    <li>CSS</li>
+                
                     <li>JAVASCRIPT</li>
-                    <li>BOOSTRAP</li>
+                    <li>DSA</li>
+                    <li>DBMS</li>
+                    <li>Operating system</li>
                 </ul>
             </div>
 
             <hr class="red-divider">
+            <div class="footer">
+                <div>
+                    <ul>
+                        <li><b>DATE:</b>12-01-2025</li>
+                        <li><b>PLACE:</b>BOKARO</li>
+                    </ul>
+                </div>
+                <div>
+                    Signature
+                    <img src="sachinsign.jpg" alt="">
+                </div>
+            </div>
         </div>
+        
+        <div class="left-panel">
+            <div align="center">
+                <img src="sachin profile.jpg" width="180px" height="220px" alt="Profile Picture" />
+            </div>
+            <br />
+            <h2 class="section-title" align="center">CONTACT</h2>
+            <hr class="left-hr">
+
+            <h3 class="section-title">Address:</h3>
+            <table class="info-table">
+                <tr>
+                    <td>VILL:</td>
+                    <td>BHALSUNDHA</td>
+                </tr>
+                <tr>
+                    <td>PO:</td>
+                    <td>CHAS</td>
+                </tr>
+                <tr>
+                    <td>PS:</td>
+                    <td>CHAS</td>
+                </tr>
+                <tr>
+                    <td>PIN-CODE:</td>
+                    <td>827013</td>
+                </tr>
+                <tr>
+                    <td>DIST:</td>
+                    <td>BOKARO (JHARKHAND)</td>
+                </tr>
+            </table>
+
+            <h3 class="section-title">Phone:</h3>
+            <p><a href="tel:7091048449">7091048449</a></p>
+
+            <h3 class="section-title">Email:</h3>
+            <p><a href="mailto:sachink09053@gmail.com">sachink09053@gmail.com</a></p>
+            <hr class="left-hr">
+
+            <h3 class="section-title">Hobbies:</h3>
+            <ul class="custom-list">
+                <li><i class="ri-headphone-line"></i>Talking with family, especially my mother</li>
+                <li><i class="ri-tree-line"></i>Spending time with nature</li>
+                <li><i class="ri-book-open-line"></i>Reading books</li>
+            </ul>
+            <hr class="left-hr">
+
+            <h3 class="section-title">Soft Skills:</h3>
+            <ul class="custom-list">
+                <li><i class="ri-user-community-fill"></i>Leadership Skills</li>
+                <li><i class="ri-chat-smile-2-line"></i>Good Communication Skills</li>
+            </ul>
+            <hr class="left-hr">
+
+            <h3 class="section-title">Strengths:</h3>
+            <ul class="custom-list">
+                <li> <i class="ri-time-line"></i>Time Management</li>
+                <li><i class="ri-medal-line"></i></i>Self-motivated</li>
+                <li><i class="ri-brain-2-fill"></i>Confident</li>
+            </ul>
+            <hr class="left-hr">
+
+            <h3 class="section-title">Declaration:</h3>
+            <p>I hereby declare that the above information is true to the best of my knowledge.</p>
+            <hr class="left-hr">
+        </div>
+
     </div>
 
 </body>
