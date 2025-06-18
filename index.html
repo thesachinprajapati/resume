@@ -1,381 +1,316 @@
-<!DOCTYPE html>
 <html>
+ <head>
+  <title>Resume</title>
+  <style type="text/css">
+   .s1{
+    list-style:disc;
+    color:white ;
+   }
+   .tb1{
+    color:white ;
+   }
+   .hd1{
+    padding:6px;
+    margin:6px -10px;
+    color:white;
+   }
+   a:link ,a:visited{
+    text-decoration:none;
+    color:white ;
+   }
+   .col{
+    color:#014C83;
+    font-family:arial;
+   }
+   .col1{
+    color:#014C83;
+    font-family:arial;
+    font-size:40px;
+    font-weight:bold;
+   }
+   #spacearea{
+    height:30px;
+    width:100%;
+   }
+  </style>
+  
+ </head>
+ <body>
 
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <title>Resume</title>
-    <style type="text/css">
-        /* General Styles */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+  <table  width="1050px" height="1200px" align="center" cellpadding="25px">
+   <tr>
 
-        /* Container and Layout Styles */
-        .container {
-            width: 1050px;
-            margin: 0 auto;
-            padding: 25px;
-            display: flex;
-            background-color: #F4F6F7;
-        }
+    <td width="70%" valign="top" bgcolor="#F4F6F7">
 
-        .left-panel {
-            width: 30%;
-            background-color: #2874a6;
-            padding: 10px;
-            color: white;
-        }
+     <p class="col1">NIVAS MANDAL</p>
+     <p class="col">MECHANICAL ENGINEERING</p>
+     <hr color="blue" size="2px"/>
+     
+     <h3 class="col"><u>PROFILE</u></h3>
+     <p>Seeking an entry-level opportunity with an esteemed organization where I can utilize my skills and enhance learning in the field of work. Capable of mastering new technologies.</p>
+     <hr color="black" size="1px"/>
 
-        div img {
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-        }
+     <h3 class="col"><u>EDUCATION QUALIFICATION</u></h3>
+     <table border="2px" cellspacing="0" width="100%">
+      <tr align="center">
+       <th>S.No</th>
+       <th>Class</th>
+       <th>Board/University</th>
+       <th>School/Collage</th>
+       <th>Passing Year</th>
+       <th>Percentage</th>
+      </tr>
+      <tr align="center">
+       <td>1.</td>
+       <td>10<sup>th</sup></td>
+       <td>CBSE</td>
+       <td>J.N.V. JAMTARA</td>
+       <td>2020</td>
+       <td>89.40%</td>
+   </tr>
+      <tr align="center">
+       <td>2.</td>
+       <td>12<sup>th</sup></td>
+       <td>CBSE</td>
+       <td>J.N.V. JAMTARA</td>
+       <td>2022</td>
+       <td>85.40%</td>
+      
+     </table>
+     
+     <h3 class="col"><u>TECHNICAL QUALIFICATION</u></h3>
+     <p>Pursuing Diploma in<b> MECHANICAL ENGINEERING </b> from<b> GOVERNMENT POLYTECHNIC ADITYAPUR</b> (JAMSHEDPUR)<b> (2022-2025)</b></p>
+     <table border="1px" cellspacing="0">
+      <tr align="center">
+       <th>Semester</th>
+       <th>Board/University</th>
+       <th>Institute</th>
+       <th>Year of Passing</th>
+       <th>Percentage of Marks</th>
+       <th>Average of Marks</th>
+      </tr>
+      <tr align="center">
+       <td>1<sup>st</sup>Semester</td>
+       <td rowspan="7"><b>JUT</b></td>
+       <td rowspan="7"><b> GOVERNMENT POLYTECHNIC ADITYAPUR</b></td>
+       <td>2023</td>
+       <td>75.75%</td>
+       <td rowspan="7">77.06%</td>
+      </tr>
+      <tr align="center">
+       <td>2<sup>nd</sup>Semester</td>
+       <td>2023</td>
+       <td>85.63%</td>
+      </tr>
+      <tr align="center">
+       <td>3<sup>rd</sup>Semester</td>
+       <td>2024</td>
+       <td>71.88%</td>
+      </tr>
+      <tr align="center">
+       <td>4<sup>th</sup>Semester</td>
+       <td>2024</td>
+       <td>75.00%</td>
+      </tr>
+      <tr align="center">
+       <td>5<sup>th</sup>Semester</td>
+       <td>---</td>
+       <td>---</td>
+      </tr>
+      <tr align="center">
+       <td>6<sup>th</sup>Semester</td>
+       <td>---</td>
+       <td>---</td>
+      </tr>
+     </table>
+     <h3 class="col"><u>FINAL YEAR PROJECT</u></h3>
 
-        .right-panel {
-            width: 70%;
-            padding: 10px;
-            background-color: #F4F6F7;
-        }
-
-        /* Typography Styles */
-        .heading-main {
-            color: #024372;
-            font-size: 40px;
-            font-weight: bold;
-        }
-
-        .sub-heading {
-            color: #02487a;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .section-title {
-            color: white;
-            font-size: 18px;
-            padding: 6px;
-            margin: 0px;
-        }
-
-        .text-white {
-            color: white;
-        }
-
-        /* List and Link Styles */
-        ul.custom-list {
-            list-style: none;
-            padding-left: 20px;
-            /* Adjusts left padding */
-        }
-
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        /* Table Styles */
-        .info-table,
-        .qualification-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-
-        .info-table td {
-            padding: 5px;
-        }
-
-        .qualification-table th,
-        .qualification-table td {
-            border: 2px solid black;
-            padding: 5px;
-            text-align: center;
-        }
-
-        /* Divider Styles */
-        hr {
-            border: none;
-            height: 1px;
-            margin: 10px 0;
-        }
-
-        hr.blue-divider {
-
-            background: linear-gradient(to right, black, rgba(0, 0, 0, 0.56), transparent);
-        }
-
-        hr.black-divider {
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.267), rgb(0, 0, 0), rgba(0, 0, 0, 0.503));
-        }
-
-        hr.red-divider {
-            background: linear-gradient(to right, rgba(255, 0, 0, 0.267), rgb(255, 0, 0), rgba(255, 0, 0, 0.503));
-        }
-
-        .left-hr {
-
-            background: linear-gradient(to right, rgba(255, 255, 255, 0.267), rgb(255, 255, 255), rgba(255, 255, 255, 0.503));
-        }
-
-        /* Space Area */
-        .space-area {
-            height: 30px;
-        }
-        .technical {
-            display: flex;
-            justify-content: flex-start;
-
-            &ul {
-                margin: 0;
-                padding: 0;
-            }
-        }
-        .technical  {
-            display: flex;
-        }
-        .technical ul li {
-            position: relative;
-            display: inline-block;
-            background-color: rgba(239, 229, 246, 0.481);
-            padding:5px 10px;
-            border-radius: 10px;
-            margin:5px;
-        }
-
-        .technical ul li::after {
-            position: absolute;
-            content: ' ';
-            height: 2px;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.24);
-            bottom: 0;
-            left: 0;
-            
-        }
-        i{
-            padding: 5px;
-            color: #02020292;
-            font-size: 20px;
-        }
-        strong{
-            font-size: 20px;
-            color: rgb(53, 15, 15);
-        }
-        .footer{
-            display: flex;
-            justify-content: space-between;
-            margin: 5px 50px 5px 20px;
-            & img{
-                display: block;
-                height: 40px;
-                width: auto;
-                border-radius: 0;
-                margin: 5px 0;
-            }
-        }
-        p{
-            margin: 5px;
-            text-indent: 10px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="container">
-        <!-- Left Panel -->
-        <!-- Right Panel -->
-        <div class="right-panel">
-            <p class="heading-main">SACHIN KUMAR MAHATO</p>
-            <p class="sub-heading">COMPUTER SCIENCE AND ENGINEERING</p>
-            <hr class="blue-divider">
-
-            <h3 class="sub-heading">Profile</h3>
-            <p>To obtain a challenging position that provides me opportunity to reach my full potential and where I
-                can use my abilities, learn new skills, and grow with the success and development of the
-                company/organisation.</p>
-            <hr class="black-divider">
-
-            <h3 class="sub-heading">Educational Qualification</h3>
-            <table class="qualification-table">
-                <tr>
-                    <th>S.No</th>
-                    <th>Class</th>
-                    <th>Board/University</th>
-                    <th>School/College</th>
-                    <th>Passing Year</th>
-                    <th>Percentage</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>10<sup>th</sup></td>
-                    <td>JAC</td>
-                    <td>RAM RUDRA +2 HIGH SCHOOL</td>
-                    <td>2019</td>
-                    <td>81.2%</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>12<sup>th</sup></td>
-                    <td>JAC</td>
-                    <td>RAM RUDRA +2 HIGH SCHOOL</td>
-                    <td>2021</td>
-                    <td>68.8%</td>
-                </tr>
-            </table>
-
-            <h3 class="sub-heading">Technical Qualification</h3>
-            <p>Pursuing Diploma in <b>COMPUTER SCIENCE AND ENGINEERING</b> from <b>GOVERNMENT POLYTECHNIC ADITYAPUR</b>
-                (JAMSHEDPUR) <b>(2022-2025)</b></p>
-            <table class="qualification-table">
-                <tr>
-                    <th>Semester</th>
-                    <th>Board/University</th>
-                    <th>Institute</th>
-                    <th>Year of Passing</th>
-                    <th>Percentage of Marks</th>
-                    <th>Average of Marks</th>
-                </tr>
-                <tr>
-                    <td>1<sup>st</sup> Semester</td>
-                    <td rowspan="7"><b>JUT</b></td>
-                    <td rowspan="7"><b>GOVERNMENT POLYTECHNIC ADITYAPUR</b></td>
-                    <td>2023</td>
-                    <td>77.35%</td>
-                    <td rowspan="7">81%</td>
-                </tr>
-                <tr>
-                    <td>2<sup>nd</sup> Semester</td>
-                    <td>2023</td>
-                    <td>84.13%</td>
-                </tr>
-                <tr>
-                    <td>3<sup>rd</sup> Semester</td>
-                    <td>2024</td>
-                    <td>79.13%</td>
-                </tr>
-                <tr>
-                    <td>4<sup>th</sup> Semester</td>
-                    <td>2024</td>
-                    <td>82.2%</td>
-                </tr>
-                <!-- Further semesters data can be added here -->
-            </table>
-
-            <h3 class="sub-heading">Technical Training</h3>
-            <ul class="custom-list">
-                <li><strong> KUNAL I TECHNOLOGY </strong></li>
-                <li><i class="ri-calendar-2-line"></i> 16/08/2024 to 15/09/2024 </li>
-                <li><i class="ri-map-pin-line"></i> Jamshedpur , Jharkhand</li>
-                <li>An organization focused on technical training.</li>
-                <li><i class="ri-arrow-right-s-fill"></i>Completed In-plant Training</li>
-                <li><i class="ri-arrow-right-s-fill"></i>Developed a static website project during the training</li>
-
-            </ul>
-
-            <h3 class="sub-heading">Technical skills:-</h3>
-            <div class="technical">
-
-                <ul>
-
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>JAVA</li>
-                
-                    <li>JAVASCRIPT</li>
-                    <li>DSA</li>
-                    <li>DBMS</li>
-                    <li>Operating system</li>
-                </ul>
-            </div>
-
-            <hr class="red-divider">
-            <div class="footer">
-                <div>
-                    <ul>
-                        <li><b>DATE:</b>12-01-2025</li>
-                        <li><b>PLACE:</b>BOKARO</li>
-                    </ul>
-                </div>
-                <div>
-                    Signature
-                    <img src="sachinsign.jpg" alt="">
-                </div>
-            </div>
-        </div>
+     <ul type="none">
+      <li>
+        <b>HYDRAULIC BREAKING SYSTEM</b>
+        <br>The main objective of this project is to study and understand the working 
+          principles, components, design considerations, and applications of hydraulic 
+          braking systems used in automobiles and industrial machinery.
+      </li>
+     </ul>
+     <h3 class="col"><u>ACHIEVEMENTS</u></h3>
+     
+     <ul type="none">
+       <ul type="disc">
+        <li>Played National in Teakwondo(U-17)</li>
+        <li>Winner in Sports Quiz</li>
         
-        <div class="left-panel">
-            <div align="center">
-                <img src="sachin profile.jpg" width="180px" height="220px" alt="Profile Picture" />
-            </div>
-            <br />
-            <h2 class="section-title" align="center">CONTACT</h2>
-            <hr class="left-hr">
+       </ul>
+      </li>
+     </ul>
+     
 
-            <h3 class="section-title">Address:</h3>
-            <table class="info-table">
-                <tr>
-                    <td>VILL:</td>
-                    <td>BHALSUNDHA</td>
-                </tr>
-                <tr>
-                    <td>PO:</td>
-                    <td>CHAS</td>
-                </tr>
-                <tr>
-                    <td>PS:</td>
-                    <td>CHAS</td>
-                </tr>
-                <tr>
-                    <td>PIN-CODE:</td>
-                    <td>827013</td>
-                </tr>
-                <tr>
-                    <td>DIST:</td>
-                    <td>BOKARO (JHARKHAND)</td>
-                </tr>
-            </table>
+     <h3 class="col"><u>TECHNICAL TRAINING</u></h3>
+     <table>
+      <tr>
+       <td>
+        <ul>
+         <li><b>ORGANIZATION:- &nbsp&nbsp  SOUTH EASTERN RAILWAY,ADITYAPUR  </b></li>
+         <li><b>TRAINING PERIOD:-</b>&nbsp&nbsp 16/08/2024 to 15/09/2024 .</li>
+         <li><B>COURSE:-</b>&nbsp&nbsp IN-PLANT TRAINING</li>
 
-            <h3 class="section-title">Phone:</h3>
-            <p><a href="tel:7091048449">7091048449</a></p>
+        </ul>
+       </td>
+      </tr>
+     </table>
+    
+     <h3 class="col"><u>PERSONAL PROFILE:</u></h3>
+     <table width="100%" cellpadding="-5px">
+      <tr>
+       <td><b>Name</b></td>
+       <td>:  NIVAS MANDAL</td>
+</tr>
+      <tr>
+       <td><b>Date of Birth </b></td>
+       <td>:  29-04-2003</td>
+      </tr>
+      <tr>
+       <td><b>Father's Name</b></td>
+       <td>:  LUTLAL MANDAL </td>
+      </tr>
+      <tr>
+       <td><b>Mother's Name</b></td>
+       <td>:  CHHABIYA DEVI</td>
+      </tr>
+      <tr>
+       <td><b>Father's Occuption</b></td>
+       <td>: FARMER </td>
+      </tr>
+      <tr>
+       <td><b>Gender</b></td>
+       <td>:  MALE</td>
+      </tr>
+      <tr>
+       <td><b>Marital Status</b></td>
+       <td>:  SINGLE</td>
+      </tr>
+      <tr>
+       <td><b>Langugage Known</b></td>
+       <td>:  HINDI, ENGLISH</td>
+      </tr>
+      <tr>
+       <td><b>Nationality</b></td>
+       <td>:  INDIAN</td>
+      </tr>
+      <tr>
+       <td><b>Blood Group</b></td>
+       <td>:  O<b><sup>+</sup></b></td>
+      </tr>
+     </table>
+     <div id="spacearea">
+     </div>
+     <table cellspacing="0" width="100%">
+      <tr>
+       <td>
+        <table>
 
-            <h3 class="section-title">Email:</h3>
-            <p><a href="mailto:sachink09053@gmail.com">sachink09053@gmail.com</a></p>
-            <hr class="left-hr">
+         <tr>
+          <td>Place:-</td>
+          <td>JAMSHEDPUR</td>
+         </tr>
+        </table>
+       </td>
+       <td>
+        <table align="right">
+         <tr>
+          <td><b>Signature:-</b></td>
+         </tr>
+         <tr>
+          <td><img src="sign.jpg" height="40px" width="160px"/></td>
+         </tr>
+        </table>
+       </td>
 
-            <h3 class="section-title">Hobbies:</h3>
-            <ul class="custom-list">
-                <li><i class="ri-headphone-line"></i>Talking with family, especially my mother</li>
-                <li><i class="ri-tree-line"></i>Spending time with nature</li>
-                <li><i class="ri-book-open-line"></i>Reading books</li>
-            </ul>
-            <hr class="left-hr">
+      </tr>
+     </table>
+     <hr color="red" size="2px" noshade="noshade"/>
+     
+    </td>
 
-            <h3 class="section-title">Soft Skills:</h3>
-            <ul class="custom-list">
-                <li><i class="ri-user-community-fill"></i>Leadership Skills</li>
-                <li><i class="ri-chat-smile-2-line"></i>Good Communication Skills</li>
-            </ul>
-            <hr class="left-hr">
 
-            <h3 class="section-title">Strengths:</h3>
-            <ul class="custom-list">
-                <li> <i class="ri-time-line"></i>Time Management</li>
-                <li><i class="ri-medal-line"></i></i>Self-motivated</li>
-                <li><i class="ri-brain-2-fill"></i>Confident</li>
-            </ul>
-            <hr class="left-hr">
+    <td  width="30%"valign="top" bgcolor="#014C83">
+     <table cellspacing="0">
+      <tr>
+       <td align="center">
+        <img src="photo.jpg" width="180px" height="220px"/>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <br/>
+        <h2 align="center" class="hd1">CONTACT</h2>
+        <hr color="#FFF" size="2px" noshade"noshade">
 
-            <h3 class="section-title">Declaration:</h3>
-            <p>I hereby declare that the above information is true to the best of my knowledge.</p>
-            <hr class="left-hr">
-        </div>
+        <h3 class="hd1">Address:</h3>
+        <table class="tb1" >
+         <tr>
+          <td>VILL:-</td>
+          <td> MANJHLADIH</td>
+         </tr>
+         <tr>
+          <td>PO:-</td>
+          <td>DEWALBARI</td>
+         </tr>
+         <tr>
+          <td>PS:-</td>
+          <td>NARAYANPUR</td>
+         </tr>
+         <tr>
+          <td>PIN-CODE:-</td>
+          <td>815352</td>
+         </tr>
+         <tr>
+          <td>DIST:-</font></td>
+          <td>JAMTARA(JHARKHAND)</td>
+         </tr>
+        </table>
 
-    </div>
+        <h3 class="hd1">PHONE:</h3>
+        <p ><a href="tel:6204689500" id="tx1">6204689500</a></p>
+     
+        <h3 class="hd1">Email:</h3>
+        <p><a href="mailto:nivasmandal70@gmail.com?subject=Query">nivasmandal70@gmail.com</a></p>
 
-</body>
+        <hr size="2px" color="#FFF"/>
+        <h3 class="hd1"><u>Hobbies:</u></h3>
+        <ul class="s1" >
+                <li>PLAYING CRICKET</li>
+                <li>PLAYING TAEKWONDO</li>
+</ul>
 
+
+        <hr size="2px" color="#FFF"/>
+    
+        <h3 class="hd1"><u>Strength:</u></h3>
+        <ul class="s1">               
+         
+         <li>SINCERE</li>
+<li>TEAMWORK</li>
+         <li>GOOD COMMUNICATION SKILL</li>
+         <li>SELF DISCIPLINED</li>
+
+        </ul>
+
+
+        <hr size="2px" color="#FFF"/>
+
+        <h3 class="hd1"><u>Declaration:</u></h3>
+        <p class="tb1">I hereby declare that the above information is true to the best of my knowledge.</p>
+        <hr size="2px" color="#FFF"/>
+
+        
+    
+       </td>
+      </tr>
+      
+     </table>
+    </td>
+   </tr>
+  </table>
+ </body>
 </html>
